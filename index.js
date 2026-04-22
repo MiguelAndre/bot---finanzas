@@ -4,8 +4,8 @@ const axios = require("axios");
 const app = express();
 app.use(express.json());
 
-const TELEGRAM_TOKEN = "TU_TOKEN_AQUI";
-const SHEETS_URL = "TU_URL_DE_APPS_SCRIPT";
+const TELEGRAM_TOKEN = "8608628699:AAH2LbSFw6RwLLV3RVBPhjjL7EpN8aab9LI";
+const SHEETS_URL = "https://script.google.com/macros/s/AKfycby0AlUj4UBqNjCqpUvNuPWFhy7nUnN2qFo0EAO-TuQCr5QoHEPQuofTZWgV6AuTDcYG/exec";
 
 app.post(`/bot${TELEGRAM_TOKEN}`, async (req, res) => {
   const msg = req.body.message?.text;
